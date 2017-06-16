@@ -14,10 +14,12 @@ def retrieve_HTML_data(link):
 
 def get_html_data_from_url(url_to_scrape, start_information, end_information):
     links_to_scrape = link_formulas.create_links_to_parse(url_to_scrape, start_information, end_information)
+    list_of_links_to_scrape = links_to_scrape[0]
+    list_of_dates = links_to_scrape[1]
     html_data = []
 
-    for web_page in links_to_scrape:
-        print "getting full text from HTML page " + str(links_to_scrape.index(web_page)) + "/" + str(len(links_to_scrape) - 1)
+    for web_page in list_of_links_to_scrape:
+        print "getting full text from HTML page " + str(list_of_links_to_scrape.index(web_page)) + "/" + str(len(list_of_links_to_scrape) - 1)
         html_data_from_page = retrieve_HTML_data(web_page)
         html_data.append(html_data_from_page)
-    return html_data
+    return html_data, list_of_dates
