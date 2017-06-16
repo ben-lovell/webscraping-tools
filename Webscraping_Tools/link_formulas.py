@@ -38,7 +38,7 @@ def create_links_to_parse(url_to_scrape, start_information, end_information):
             wunderground_links_to_return.append(complete_link)
 
 
-        return wunderground_links_to_return
+        return wunderground_links_to_return, date_iterations
 
 
     if "wunderground" in url_to_scrape:
