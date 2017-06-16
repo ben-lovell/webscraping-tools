@@ -5,7 +5,7 @@ url_to_scrape = "https://www.wunderground.com/history/airport/EHRD/2015/2/2/Dail
 
 resulting_csv_file_name = "wunderground"
 
-resulting_file_location = "/Users/benlovell/Library/Mobile Documents/com~apple~CloudDocs/Code/Web_Scraping_Code/Output Files/"
+resulting_file_location = "/Users/.../output_folder_name/"
 
 key_word_start = "12:00 AM"
 key_word_end = "show"
